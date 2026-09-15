@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhoomi Shivhare — Software Developer passionate about open-source technology, geospatial intelligence, and building impactful digital experiences. GSoC 2026 Contributor with Liquid Galaxy.">
+  <meta name="keywords" content="Bhoomi Shivhare, Software Developer, GSoC, Google Summer of Code, Liquid Galaxy, Portfolio">
+  <meta name="author" content="Bhoomi Shivhare">
+  <title>Bhoomi Shivhare — Software Developer & Open-Source Contributor</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#" class="nav-logo">bhoomi<span>.</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#education" class="nav-link" data-section="education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            GSoC 2026 Contributor
+          </div>
+          <h1 class="hero-name">
+            Bhoomi<br>
+            <span class="gradient-text">Shivhare</span>
+          </h1>
+          <div class="hero-title-line">
+            <span class="hero-role" id="heroRole"></span>
+            <span class="typing-cursor"></span>
+            <div class="hero-line"></div>
+          </div>
+          <p class="hero-description">
+            Software Developer passionate about open-source technology, problem-solving, 
+            and creating meaningful digital experiences. Building technology that is 
+            collaborative, accessible, and impactful.
+          </p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn-primary">
+              <i class="fas fa-briefcase"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fas fa-paper-plane"></i>
+              Get In Touch
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="34000">0</div>
+              <div class="stat-label">Power Plants Analyzed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="1000000">0</div>
+              <div class="stat-label">Documents Processed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="500">0</div>
+              <div class="stat-label">Daily Users Supported</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-anim-wrapper">
+            <div class="hero-anim-glow"></div>
+            <!-- Orbiting ring -->
+            <div class="orbit-ring orbit-ring-1">
+              <div class="orbit-dot" style="--angle: 0deg;"><i class="fab fa-google"></i></div>
+              <div class="orbit-dot" style="--angle: 90deg;"><i class="fas fa-code"></i></div>
+              <div class="orbit-dot" style="--angle: 180deg;"><i class="fas fa-globe"></i></div>
+              <div class="orbit-dot" style="--angle: 270deg;"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="orbit-ring orbit-ring-2">
+              <div class="orbit-dot" style="--angle: 45deg;"><i class="fab fa-react"></i></div>
+              <div class="orbit-dot" style="--angle: 135deg;"><i class="fab fa-node-js"></i></div>
+              <div class="orbit-dot" style="--angle: 225deg;"><i class="fas fa-database"></i></div>
+              <div class="orbit-dot" style="--angle: 315deg;"><i class="fas fa-leaf"></i></div>
+            </div>
+            <!-- Center composition -->
+            <div class="hero-center-block">
+              <div class="center-bracket left">&lt;</div>
+              <div class="center-slash">/</div>
+              <div class="center-bracket right">&gt;</div>
+              <div class="center-heart">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+            </div>
+            <!-- Floating code particles -->
+            <div class="code-particle p1">{&nbsp;}</div>
+            <div class="code-particle p2">&lt;/&gt;</div>
+            <div class="code-particle p3">( )</div>
+            <div class="code-particle p4">[ ]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-user"></i> About Me</div>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+        <p class="section-subtitle">
+          A developer who thrives at the intersection of open-source innovation and impactful technology.
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Software Developer</strong> currently pursuing my B.Tech in Computer Science at 
+            GLA University. I was selected as a <strong>Google Summer of Code 2026 Contributor</strong> 
+            with the Liquid Galaxy organization, where I work on geospatial and climate-focused solutions 
+            using Google Earth, Gemini API, and immersive 3D visualization.
+          </p>
+          <p>
+            My professional experience spans building defence-grade AI platforms at Evigway Technologies 
+            and developing responsive educational web applications. I'm deeply interested in building 
+            technology that is collaborative, accessible, and impactful in the real world.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">🌍</div>
+              <div class="highlight-title">34K+</div>
+              <div class="highlight-desc">Power Plants Analyzed</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">📄</div>
+              <div class="highlight-title">1M+</div>
+              <div class="highlight-desc">Documents Processed</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">⚡</div>
+              <div class="highlight-title">40%</div>
+              <div class="highlight-desc">Faster Load Times</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">👥</div>
+              <div class="highlight-title">500+</div>
+              <div class="highlight-desc">Daily Users Supported</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-info-grid reveal reveal-delay-2">
+          <div class="about-info-card">
+            <div class="about-info-label">🎓 Education</div>
+            <div class="about-info-value">B.Tech in Computer Science</div>
+            <div class="about-info-sub">GLA University · 2023 – 2027</div>
+          </div>
+          <div class="about-info-card">
+            <div class="about-info-label">💼 Current Role</div>
+            <div class="about-info-value">GSoC 2026 Contributor</div>
+            <div class="about-info-sub">Liquid Galaxy (Google Open Source)</div>
+          </div>
+          <div class="about-info-card">
+            <div class="about-info-label">📍 Location</div>
+            <div class="about-info-value">India</div>
+            <div class="about-info-sub">Available for remote opportunities</div>
+          </div>
+          <div class="about-info-card">
+            <div class="about-info-label">🎯 Interests</div>
+            <div class="about-info-value">Open Source · Full-Stack · AI</div>
+            <div class="about-info-sub">Climate Intelligence & Web Development</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-rocket"></i> Experience</div>
+        <h2 class="section-title">Where I've <span class="gradient-text">Worked</span></h2>
+        <p class="section-subtitle">
+          Building production-grade applications and contributing to open-source ecosystems.
+        </p>
+      </div>
+      <div class="timeline">
+        <!-- GSoC -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Google Open Source Contributor</div>
+                <div class="timeline-company">Liquid Galaxy</div>
+              </div>
+              <div class="timeline-date">May 2026 – Aug 2026</div>
+            </div>
+            <div class="timeline-org-note">
+              Liquid Galaxy is an open-source project founded and created by Google in 2008 through 
+              Google's 20% project policy, focused on immersive geospatial visualization using Google Earth.
+            </div>
+            <div class="timeline-badges">
+              <div class="timeline-project">
+                <i class="fas fa-leaf"></i>
+                <a href="https://summerofcode.withgoogle.com/programs/2026/projects/X2xqDQFw" target="_blank" rel="noopener noreferrer">EcoGrid Intelligence ↗</a>
+              </div>
+              <div class="timeline-project">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/LiquidGalaxyLAB/ecogrid-intelligence/blob/main/README.md" target="_blank" rel="noopener noreferrer">Know More ↗</a>
+              </div>
+              <div class="timeline-project cert-badge">
+                <i class="fas fa-certificate"></i>
+                <a href="https://drive.google.com/file/d/1ypPr6oznlcuHZrFEylrfHoY8z_OT4FlD/view?usp=sharing" target="_blank" rel="noopener noreferrer">GSoC Certificate ↗</a>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Selected as a Google Summer of Code 2026 Contributor with Liquid Galaxy, contributing to an open-source geospatial and climate intelligence project built around Google Earth and immersive 3D visualization.</li>
+              <li>Developed EcoGrid Intelligence using Flutter, Gemini API, Open-Meteo API, and Drift, analyzing climate resilience across 34K+ global power plants.</li>
+              <li>Built 10+ geospatial workflows using KML, Google Earth, and Liquid Galaxy, enabling immersive 3D visualizations, automated camera tours, and infrastructure risk analysis.</li>
+              <li>Implemented Gemini Function Calling, Clean Architecture, and Repository Pattern, enabling AI-driven climate analysis, automated risk assessment, and contextual geospatial insights.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Evigway -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Software Developer Engineer</div>
+                <div class="timeline-company">Evigway Technologies</div>
+              </div>
+              <div class="timeline-date">Mar 2025 – Jul 2026</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engineered responsive React.js frontends with CSS, reducing page load time by 40% and maintaining 90+ Lighthouse scores across 10+ production applications.</li>
+              <li>Built secure React.js/Node.js applications with OCR and REST APIs for defence-grade AI platforms, processing 1M+ documents for government and law-enforcement use cases.</li>
+              <li>Developed document-intelligence features using Node.js, OCR pipelines, and MongoDB, reducing manual data-entry time by 60% and supporting 500+ daily users.</li>
+              <li>Built and optimized 15+ UI screens and reusable components, improving usability and reducing task-completion time by 30% through iterative design and usability improvements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GAME -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Software Developer Intern</div>
+                <div class="timeline-company">Gaurav's Academy for Mechanical Engineers</div>
+              </div>
+              <div class="timeline-date">May 2024 – Jan 2025</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed responsive web interfaces using HTML, CSS, JavaScript, React.js, and Bootstrap, building 10+ reusable UI components for improved usability across desktop and mobile devices.</li>
+              <li>Optimized commonly used pages and components for faster loading and responsiveness, contributing to a smoother experience for 500+ students/users.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-code"></i> Projects</div>
+        <h2 class="section-title">What I've <span class="gradient-text">Built</span></h2>
+        <p class="section-subtitle">
+          From climate intelligence platforms to real-time safety applications.
+        </p>
+      </div>
+      <div class="projects-grid">
+        <!-- EcoGrid -->
+        <div class="project-card reveal">
+          <div class="project-icon icon-purple">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="project-name">EcoGrid Intelligence</div>
+          <div class="project-desc">
+            A geospatial climate intelligence platform analyzing climate resilience across 
+            34K+ global power plants using Google Earth, Gemini API, and immersive 3D visualization 
+            with the Liquid Galaxy system. Features AI-driven risk assessment and automated camera tours.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Gemini API</span>
+            <span class="tech-tag">Open-Meteo</span>
+            <span class="tech-tag">KML</span>
+            <span class="tech-tag">Google Earth</span>
+            <span class="tech-tag">Drift</span>
+          </div>
+          <div class="project-links">
+            <a href="https://summerofcode.withgoogle.com/programs/2026/projects/X2xqDQFw" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Project ↗
+            </a>
+            <a href="https://github.com/LiquidGalaxyLAB/ecogrid-intelligence/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
+              <i class="fab fa-github"></i> GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- SheAlert -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon icon-pink">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-name">SheAlert</div>
+          <div class="project-desc">
+            A women's safety application featuring SOS alerts and live GPS location sharing. 
+            Built real-time location-sharing workflows using Google Maps API and REST APIs, 
+            enabling instant emergency notifications and contact management.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Google Maps API</span>
+          </div>
+        </div>
+
+        <!-- ExpenseIQ -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon icon-cyan">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="project-name">ExpenseIQ</div>
+          <div class="project-desc">
+            A full-stack expense management platform supporting 500+ expense records with 
+            real-time tracking and categorization. Features 5+ interactive financial dashboards 
+            with responsive REST APIs for streamlined expense analysis and reporting.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-tools"></i> Skills</div>
+        <h2 class="section-title">My <span class="gradient-text">Toolkit</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with.</p>
+      </div>
+
+      <div class="skills-marquee reveal">
+        <div class="marquee-track">
+          <span class="marquee-item">Java</span>
+          <span class="marquee-item">Golang</span>
+          <span class="marquee-item">C++</span>
+          <span class="marquee-item">JavaScript</span>
+          <span class="marquee-item">Python</span>
+          <span class="marquee-item">Dart</span>
+          <span class="marquee-item">Flutter</span>
+          <span class="marquee-item">React.js</span>
+          <span class="marquee-item">Node.js</span>
+          <span class="marquee-item">Express.js</span>
+          <span class="marquee-item">MongoDB</span>
+          <span class="marquee-item">MySQL</span>
+          <span class="marquee-item">Docker</span>
+          <span class="marquee-item">Git</span>
+          <span class="marquee-item">Linux</span>
+          <span class="marquee-item">Gemini API</span>
+          <span class="marquee-item">Google Earth</span>
+          <span class="marquee-item">KML</span>
+          <span class="marquee-item">Google Maps API</span>
+          <span class="marquee-item">Bash</span>
+          <span class="marquee-item">Java</span>
+          <span class="marquee-item">Golang</span>
+          <span class="marquee-item">C++</span>
+          <span class="marquee-item">JavaScript</span>
+          <span class="marquee-item">Python</span>
+          <span class="marquee-item">Dart</span>
+          <span class="marquee-item">Flutter</span>
+          <span class="marquee-item">React.js</span>
+          <span class="marquee-item">Node.js</span>
+          <span class="marquee-item">Express.js</span>
+          <span class="marquee-item">MongoDB</span>
+          <span class="marquee-item">MySQL</span>
+          <span class="marquee-item">Docker</span>
+          <span class="marquee-item">Git</span>
+          <span class="marquee-item">Linux</span>
+          <span class="marquee-item">Gemini API</span>
+          <span class="marquee-item">Google Earth</span>
+          <span class="marquee-item">KML</span>
+          <span class="marquee-item">Google Maps API</span>
+          <span class="marquee-item">Bash</span>
+        </div>
+      </div>
+
+      <div class="skills-content">
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon icon-lang"><i class="fas fa-code"></i></div>
+            <div class="skill-category-name">Languages</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Golang</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Dart</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon icon-tech"><i class="fas fa-layer-group"></i></div>
+            <div class="skill-category-name">Technologies & Frameworks</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">Google Earth</span>
+            <span class="skill-tag">Google Maps API</span>
+            <span class="skill-tag">KML</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon icon-course"><i class="fas fa-graduation-cap"></i></div>
+            <div class="skill-category-name">Relevant Coursework</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Database Management Systems</span>
+            <span class="skill-tag">Agile Software Development</span>
+            <span class="skill-tag">Object-Oriented Programming</span>
+            <span class="skill-tag">Data Structures & Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-graduation-cap"></i> Education</div>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="education-emoji">🎓</div>
+          <div class="education-school">GLA University</div>
+          <div class="education-degree">B.Tech in Computer Science</div>
+          <div class="education-year">2023 – 2027</div>
+          <div class="education-score">CGPA: 7.65</div>
+        </div>
+        <div class="education-card reveal reveal-delay-1">
+          <div class="education-emoji">📚</div>
+          <div class="education-school">Shivalik Cambridge College</div>
+          <div class="education-degree">CBSE Class XII</div>
+          <div class="education-year">2021 – 2022</div>
+          <div class="education-score">85%</div>
+        </div>
+        <div class="education-card reveal reveal-delay-2">
+          <div class="education-emoji">🏫</div>
+          <div class="education-school">Shivalik Cambridge College</div>
+          <div class="education-degree">CBSE Class X</div>
+          <div class="education-year">2019 – 2020</div>
+          <div class="education-score">90%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-trophy"></i> Achievements</div>
+        <h2 class="section-title">Milestones <span class="gradient-text">Reached</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🏆</div>
+          <div>
+            <div class="achievement-title">Google Summer of Code 2026</div>
+            <div class="achievement-desc">Selected as a GSoC Contributor with the Liquid Galaxy organization, working on geospatial climate intelligence.</div>
+            <a href="https://drive.google.com/file/d/1ypPr6oznlcuHZrFEylrfHoY8z_OT4FlD/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.8rem; font-weight: 600; color: var(--accent-amber); text-decoration: none; padding: 4px 12px; border-radius: 9999px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); transition: 0.2s;">View Certificate ↗</a>
+          </div>
+        </div>
+        <div class="achievement-card reveal reveal-delay-1">
+          <div class="achievement-icon">🥇</div>
+          <div>
+            <div class="achievement-title">Winner — HackCentrix Hackathon</div>
+            <div class="achievement-desc">Won the HackCentrix Hackathon organized by Google Developers Group.</div>
+            <a href="https://drive.google.com/file/d/1GRYl4GsWsxHPxzpCE1F_JOf8gIv-vXq0/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.8rem; font-weight: 600; color: var(--accent-amber); text-decoration: none; padding: 4px 12px; border-radius: 9999px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); transition: 0.2s;">View Certificate ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><i class="fas fa-envelope"></i> Contact</div>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">
+          I'm always open to discussing new opportunities, open-source collaborations, 
+          or just saying hello!
+        </p>
+      </div>
+      <div class="contact-content reveal">
+        <div class="contact-links">
+          <div class="contact-link">
+            <i class="fas fa-envelope"></i>
+            shivharebhoomi07@gmail.com
+          </div>
+          <div class="contact-link">
+            <i class="fas fa-phone"></i>
+            +91 7500059200
+          </div>
+          <a href="https://www.linkedin.com/in/bhoomi-shivhare-000895374/" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed & Built by <span class="gradient-text">Bhoomi Shivhare</span> · © 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
